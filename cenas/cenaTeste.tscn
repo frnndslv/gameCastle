@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcbefn6xohslc"]
+[gd_scene load_steps=3 format=3 uid="uid://bcbefn6xohslc"]
 
-[ext_resource type="Texture2D" uid="uid://jmkd45vkoqwo" path="res://icon.svg" id="1_54fsk"]
+[ext_resource type="TileSet" uid="uid://da0nphty3uy24" path="res://cenas/TileMaps/newTileTeste.tres" id="1_0w10t"]
+[ext_resource type="PackedScene" uid="uid://bi1cl58wruwyc" path="res://cenas/Player/jogador.tscn" id="2_lluck"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(80, 96)
-texture = ExtResource("1_54fsk")
+[node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
+tile_set = ExtResource("1_0w10t")
+format = 2
+layer_0/y_sort_enabled = true
+
+[node name="Jogador" parent="." instance=ExtResource("2_lluck")]
+position = Vector2(65, 66)
