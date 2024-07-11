@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://cv2ygk3754ywg"]
+
+[ext_resource type="Texture2D" uid="uid://cc4ot2j20rh1y" path="res://artes2d/cenario/chao normal.png" id="1_nk38u"]
+[ext_resource type="Texture2D" uid="uid://cxn3f52b31ur2" path="res://artes2d/cenario/chao celecao.png" id="2_k0elp"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mubw8"]
+resource_name = "chaos_normal"
+texture = ExtResource("1_nk38u")
+margins = Vector2i(15, 0)
+texture_region_size = Vector2i(128, 64)
+7:12/size_in_atlas = Vector2i(2, 3)
+7:12/0 = 0
+6:4/size_in_atlas = Vector2i(2, 3)
+6:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdjp3"]
+resource_name = "chao_selecao"
+texture = ExtResource("2_k0elp")
+margins = Vector2i(15, 0)
+texture_region_size = Vector2i(128, 64)
+7:12/size_in_atlas = Vector2i(2, 3)
+7:12/0 = 0
+6:4/size_in_atlas = Vector2i(2, 3)
+6:4/0 = 0
+
+[resource]
+tile_shape = 1
+tile_size = Vector2i(220, 128)
+sources/0 = SubResource("TileSetAtlasSource_mubw8")
+sources/1 = SubResource("TileSetAtlasSource_hdjp3")
